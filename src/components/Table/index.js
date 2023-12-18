@@ -14,48 +14,48 @@ const columns = [
 ];
 
 const rows = [
-  { id: 1, lastName: "Snow", firstName: "Jon", age: 35, isEdit: false },
-  { id: 2, lastName: "Lannister", firstName: "Cersei", age: 42, isEdit: false },
+  { id: 1, firstName: "Jon", lastName: "Snow", age: 35, isEdit: false },
+  { id: 2, firstName: "Cersei", lastName: "Lannister", age: 42, isEdit: false },
   { id: 3, lastName: "Lannister", firstName: "Jaime", age: 45, isEdit: false },
-  { id: 4, lastName: "Stark", firstName: "Arya", age: 16, isEdit: false },
+  { id: 4, firstName: "Arya", lastName: "Stark", age: 16, isEdit: false },
   {
     id: 5,
-    lastName: "Targaryen",
     firstName: "Daenerys",
+    lastName: "Targaryen",
     age: null,
     isEdit: false,
   },
-  { id: 6, lastName: "Melisandre", firstName: "", age: 150, isEdit: false },
-  { id: 7, lastName: "Clifford", firstName: "Ferrara", age: 44, isEdit: false },
-  { id: 8, lastName: "Frances", firstName: "Rossini", age: 36, isEdit: false },
-  { id: 9, lastName: "Roxie", firstName: "Harvey", age: 65, isEdit: false },
-  { id: 10, lastName: "Snow", firstName: "Jon", age: 35, isEdit: false },
+  { id: 6, firstName: "", lastName: "Melisandre", age: 150, isEdit: false },
+  { id: 7, firstName: "Ferrara", lastName: "Clifford", age: 44, isEdit: false },
+  { id: 8, firstName: "Rossini", lastName: "Frances", age: 36, isEdit: false },
+  { id: 9, firstName: "Harvey", lastName: "Roxie", age: 65, isEdit: false },
+  { id: 10, firstName: "Jon", lastName: "Snow", age: 35, isEdit: false },
   {
     id: 11,
-    lastName: "Lannister",
     firstName: "Cersei",
+    lastName: "Lannister",
     age: 42,
     isEdit: false,
   },
-  { id: 12, lastName: "Lannister", firstName: "Jaime", age: 45, isEdit: false },
-  { id: 13, lastName: "Stark", firstName: "Arya", age: 16, isEdit: false },
+  { id: 12, firstName: "Jaime", lastName: "Lannister", age: 45, isEdit: false },
+  { id: 13, firstName: "Arya", lastName: "Stark", age: 16, isEdit: false },
   {
     id: 14,
-    lastName: "Targaryen",
     firstName: "Daenerys",
+    lastName: "Targaryen",
     age: null,
     isEdit: false,
   },
-  { id: 15, lastName: "Melisandre", firstName: "", age: 150, isEdit: false },
+  { id: 15, firstName: "", lastName: "Melisandre", age: 150, isEdit: false },
   {
     id: 16,
-    lastName: "Clifford",
     firstName: "Ferrara",
+    lastName: "Clifford",
     age: 44,
     isEdit: false,
   },
-  { id: 17, lastName: "Frances", firstName: "Rossini", age: 36, isEdit: false },
-  { id: 18, lastName: "Roxie", firstName: "Harvey", age: 65, isEdit: false },
+  { id: 17, firstName: "Rossini", lastName: "Frances", age: 36, isEdit: false },
+  { id: 18, firstName: "Harvey", lastName: "Roxie", age: 65, isEdit: false },
 ];
 
 const Table = () => {
@@ -279,6 +279,7 @@ const Table = () => {
               handleCheckBox={handleCheckBox}
               isCheck={checkboxList.includes(e.id)}
               setTableData={setTableData}
+              setModifiedTableData={setModifiedTableData}
             />
           ))}
         </tbody>
