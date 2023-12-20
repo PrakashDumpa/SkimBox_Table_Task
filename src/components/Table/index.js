@@ -174,7 +174,7 @@ const Table = () => {
 
   //   console.log(rowsPerPage, startIndex, endIndex);
   //   console.log(checkboxList);
-  console.log(tableData);
+  // console.log(tableData);
   //   console.log(serachInput);
   //   console.log(addObj);
 
